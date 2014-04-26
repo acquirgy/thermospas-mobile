@@ -1,0 +1,158 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+    font: 16px/26px Myriad Pro, Tahoma, Geneva, sans-serif;
+    padding: 20px;
+    line-height: 24px;
+}
+
+html, button, input, select, textarea {
+    color: #222;
+    border: none;
+}
+
+::-moz-selection {
+    background: #01529C;
+    text-shadow: none;
+}
+
+::selection {
+    background: #01529C;
+    text-shadow: none;
+}
+
+h1 {
+    color: #01529C;
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+h1 strong {
+    color: #198ac4;
+}
+
+p.lead {
+    color: #96a0a2;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+a {
+    color: #01529C;
+}
+
+.wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+form {
+    background: #0273B1; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #3690c2 0%, #0273b1 50%, #0273b1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3690c2), color-stop(50%,#0273b1), color-stop(100%,#0273b1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #3690c2 0%,#0273b1 50%,#0273b1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #3690c2 0%,#0273b1 50%,#0273b1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #3690c2 0%,#0273b1 50%,#0273b1 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #3690c2 0%,#0273b1 50%,#0273b1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3690c2', endColorstr='#0273b1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+.form-border {
+    margin: 0 -20px;
+    height: 20px;
+    background: #7d8588; /* Old browsers */
+    background: -moz-linear-gradient(left,  #7d8588 0%, #a8adb0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#7d8588), color-stop(100%,#a8adb0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #7d8588 0%,#a8adb0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #7d8588 0%,#a8adb0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #7d8588 0%,#a8adb0 100%); /* IE10+ */
+    background: linear-gradient(to right,  #7d8588 0%,#a8adb0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d8588', endColorstr='#a8adb0',GradientType=1 ); /* IE6-9 */
+}
+.form-border.top {
+    border-radius: 15px 15px 0 0;
+}
+.form-border.bottom {
+    border-radius: 0 0 15px 15px;
+}
+
+.row {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px 10px;
+    float: left;
+    color: #0273B1;
+    font-size: 14px;
+}
+
+.first-name {
+    width: 48%;
+    margin-right: 4%;
+}
+.last-name {
+    width: 48%;
+}
+.city {
+    width: 40%;
+    margin-right: 4%;
+}
+.state {
+    width: 24%;
+    margin-right: 4%;
+}
+.zip {
+    width: 28%;
+}
+
+button {
+    background: #fe0000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fe0000 0%, #f68987 50%, #fe0000 50%, #fe0000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe0000), color-stop(50%,#f68987), color-stop(50%,#fe0000), color-stop(100%,#fe0000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fe0000 0%,#f68987 50%,#fe0000 50%,#fe0000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fe0000 0%,#f68987 50%,#fe0000 50%,#fe0000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fe0000 0%,#f68987 50%,#fe0000 50%,#fe0000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fe0000 0%,#f68987 50%,#fe0000 50%,#fe0000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe0000', endColorstr='#fe0000',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    display: block;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.4em;
+    padding: 10px;
+    text-shadow: 1px 1px 5px #5A0202;
+    font-weight: 700;
+    margin-top: 10px;
+}
+button span {
+    text-decoration: underline;
+}
+button:hover {
+    background: #AF0000;
+}
+
+.required-text {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
