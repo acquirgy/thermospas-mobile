@@ -30,7 +30,7 @@ $ht_id = $db->insert('ht_form', $submission);
 $_SESSION['ht_id'] = $ht_id;
 
 // Send email
-//$submission = $db->get('ht_form', array('ht_id', $ht_id));
-//$email->sendSubmission($submission, 'mobile landing page');
+$submission = $db->get('ht_form', array('ht_id', $ht_id));
+$email->sendSubmission($submission, 'mobile landing page');
 
 header('Location: confirmation.php');
