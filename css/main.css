@@ -52,6 +52,11 @@ a {
 .wrapper {
     max-width: 480px;
     margin: 0 auto;
+    text-align: left;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px;
 }
 
 form {
@@ -165,28 +170,52 @@ button:hover {
     padding-bottom: 10px;
 }
 
+.confirmation {
+    margin-left: 15px;
+    color: #636363;
+}
+
+.confirmation h2 {
+    color: #01529C;
+}
+
+.thank-you {
+    display: block;
+    line-height: 0;
+    margin: 25px 0 35px 0;
+}
+
+.thank-you, .confirmation-address h3 {
+    color: #01529C;
+    font-size: 24px;
+}
+
+.confirmation-address p {
+    font-size: 20px;
+    /*color: #636363;*/
+}
+
 .social {
-    margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    width: 228px;
 }
 .social li {
     margin: 0;
     padding: 0;
     float: left;
+    list-style: none;
 }
 .social li a {
     display: block;
     overflow: hidden;
-    width: 57px;
-    height: 57px;
+    width: 100px;
+    height: 100px;
     text-indent: -9999px;
 }
-.social li a.facebook {background: url(/img/sprite.png) no-repeat 0 -100px;}
-.social li a.pinterest {background: url(/img/sprite.png) no-repeat -60px -100px;}
-.social li a.youtube {background: url(/img/sprite.png) no-repeat -120px -100px;}
-.social li a.twitter {background: url(/img/sprite.png) no-repeat -180px -100px;}
+.social li a.facebook {background: url(/img/sprite.png) no-repeat 0 0;}
+.social li a.pinterest {background: url(/img/sprite.png) no-repeat -100px 0;}
+.social li a.youtube {background: url(/img/sprite.png) no-repeat -200px 0;}
+.social li a.twitter {background: url(/img/sprite.png) no-repeat -300px 0;}
 
 .free-stuff li {
     list-style: none;

@@ -20,4 +20,4 @@
     </head>
     <body>
         <div class="wrapper">
-            <img src="/img/logo-blue-1.png" alt="ThermoSpas - Designed to Improve Your Life">
+            <img src="/img/blue-logo.png" alt="ThermoSpas - Designed to Improve Your Life">
