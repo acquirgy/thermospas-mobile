@@ -178,6 +178,7 @@ button:hover {
 .confirmation h3 {
     color: #01529C;
     font-size: 24px;
+    margin-bottom: -5px;
 }
 
 .confirmation p {
@@ -209,6 +210,7 @@ button:hover {
     padding: 0;
     overflow: hidden;
 }
+
 .social li {
     margin: 0;
     padding: 0;
@@ -227,6 +229,18 @@ button:hover {
 .social li a.youtube {background: url(/img/sprite.png) no-repeat -200px 0;}
 .social li a.twitter {background: url(/img/sprite.png) no-repeat -300px 0;}
 
+.download-materials p {
+    margin: -5px 0 25px;
+}
+
+.free-stuff li {
+    list-style: none;
+}
+.free-stuff img {
+    display: block;
+    margin: 0 auto;
+}
+
 .logos {
     padding: 0;
     overflow: hidden;
@@ -238,18 +252,9 @@ button:hover {
     list-style: none;
 }
 
-
-.free-stuff li {
-    list-style: none;
-}
-.free-stuff img {
-    display: block;
-    margin: 0 auto;
-}
-
 .footer {
-    margin: 40px 25px;
-    font-size: 14px;
+    padding-top: 25px;
+    font-size: 18px;
     text-align: left;
     color: #636363;
     line-height: 15px;
