@@ -64,7 +64,16 @@ if(isset($_SESSION['ht_id'])) {
       </li>
     </ul>
 
-    <?php include('includes/footer.php') ?>
+    <ul class='logos'>
+      <li><img src='/img/speak-to-sales-associate.png' alt='Speak to a friendly sales associate about a free site inspection! 800.555.1212'/>
+      <li><img src='/img/apsp-logo.png' alt='Association of Pool and Spa Professionals'/></li>
+      <li><img src='/img/arthritis-foundation.png' alt='Ease of Commendation by Arthritis Foundation'/></li>
+    </ul>
+
   </div>
 
 </div>
+
+<?php include('includes/footer.php') ?>
+
+

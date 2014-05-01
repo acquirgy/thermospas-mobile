@@ -227,6 +227,18 @@ button:hover {
 .social li a.youtube {background: url(/img/sprite.png) no-repeat -200px 0;}
 .social li a.twitter {background: url(/img/sprite.png) no-repeat -300px 0;}
 
+.logos {
+    padding: 0;
+    overflow: hidden;
+}
+.logos li {
+    margin: 0;
+    padding: 5px;
+    float: left;
+    list-style: none;
+}
+
+
 .free-stuff li {
     list-style: none;
 }
@@ -236,7 +248,13 @@ button:hover {
 }
 
 .footer {
-    margin-top: 20px;
+    margin: 40px 25px;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
+    color: #636363;
+    line-height: 15px;
+}
+
+.footer a {
+    color: #636363;
 }
