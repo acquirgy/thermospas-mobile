@@ -55,10 +55,6 @@ a {
     text-align: left;
 }
 
-.padding-bottom-15 {
-    padding-bottom: 15px;
-}
-
 form {
     background: #0273B1; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #3690c2 0%, #0273b1 50%, #0273b1 100%); /* FF3.6+ */
@@ -171,28 +167,42 @@ button:hover {
 }
 
 .confirmation {
-    margin-left: 15px;
     color: #636363;
+    line-height: 25px;
 }
 
 .confirmation h2 {
     color: #01529C;
 }
 
-.thank-you {
-    display: block;
-    line-height: 0;
-    margin: 25px 0 35px 0;
-}
-
-.thank-you, .confirmation-address h3 {
+.confirmation h3 {
     color: #01529C;
     font-size: 24px;
 }
 
-.confirmation-address p {
-    font-size: 20px;
-    /*color: #636363;*/
+.confirmation p {
+    font-size: 22px;
+}
+
+.thank-you {
+    margin: 50px 0 35px;
+}
+
+.thank-you h1, .thank-you h2 {
+    display: block;
+    line-height: 10px;
+}
+
+.address, .connect, .download-materials {
+    margin-left: 10px;
+}
+
+.address p {
+   margin-bottom: 40px;
+}
+
+.connect {
+    margin-bottom: 45px;
 }
 
 .social {
