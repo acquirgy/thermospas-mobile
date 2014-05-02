@@ -18,7 +18,7 @@ if(isset($_SESSION['ht_id'])) {
     <h2><?= $submission['fname'] ?> <?= $submission['lname'] ?>!</h2>
   </div>
 
-  <div class='address'>
+  <div class='confirmation-address'>
     <p><strong>If you provided your address, your FREE DVD and Brochure will be sent to:</strong></p>
     <p>
       <?= $submission['fname'] ?> <?= $submission['lname'] ?><br />

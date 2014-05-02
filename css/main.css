@@ -194,11 +194,11 @@ button:hover {
     line-height: 10px;
 }
 
-.address, .connect, .download-materials {
+.confirmation-address, .connect, .download-materials {
     margin-left: 10px;
 }
 
-.address p {
+.confirmation-address p {
    margin-bottom: 40px;
 }
 
