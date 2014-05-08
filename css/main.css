@@ -252,6 +252,12 @@ button:hover {
     list-style: none;
 }
 
+.logos span {
+    color: #01529C;
+    display: block;
+    margin: -10px 58px;
+}
+
 .footer {
     padding-top: 25px;
     font-size: 18px;
