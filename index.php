@@ -5,8 +5,8 @@
     $_SESSION['ht_id'] = false;
 ?>
 
-<h1>Get Your <strong>FREE</strong> DVD & Brochure on Affordable Hot Tubs!</h1>
-<p class="lead">Plus, Right Now <strong>SAVE an Additional $1,000</strong> with Bonus Gifts!</p>
+<h1>Get Your <strong>FREE</strong> Hot Tub Brochure & DVD</h1>
+<p class="lead">Request a Hot Tub Quote and <strong>Save $1000</strong></p>
 <form name="form" class="form" method="POST" action="process.php">
     <input type="hidden" name="validate" class="validate" value="invalid" />
     <div class="form-border top"></div>
