@@ -17,6 +17,7 @@
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
+        <?php if (isset($tracking)) echo $tracking ?>
     </head>
     <body>
         <div class="wrapper">

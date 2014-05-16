@@ -1,7 +1,8 @@
+<?php $tracking = file_get_contents('includes/confirmation_tracking.html') ?>
+
 <?php include('includes/header.php') ?>
 
 <?php
-
 if(isset($_SESSION['ht_id'])) {
   require_once($_SERVER['DOCUMENT_ROOT'] . '/classes/HtDb.php');
   $db = new HtDb();
@@ -9,13 +10,11 @@ if(isset($_SESSION['ht_id'])) {
 } else {
   header('Location: /');
 }
-
 ?>
 <div class='confirmation'>
 
   <div class='thank-you'>
-    <h1>Thank you</h1>
-    <h2><?= $submission['fname'] ?> <?= $submission['lname'] ?>!</h2>
+    <h1>Thank you <br /><?= $submission['fname'] ?> <?= $submission['lname'] ?>!</h1>
   </div>
 
   <div class='confirmation-address'>

@@ -2,6 +2,10 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+iframe {
+    display: none;
+}
+
 body {
     font: 16px/26px Myriad Pro, Tahoma, Geneva, sans-serif;
     padding: 20px;
@@ -185,36 +189,22 @@ button:hover {
 .confirmation h3 {
     color: #01529C;
     font-size: 24px;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
 
 .confirmation p {
-    font-size: 22px;
 }
 
 .thank-you {
-    margin: 50px 0 35px;
-}
-
-.thank-you h1, .thank-you h2 {
-    display: block;
-    line-height: 10px;
-}
-
-.confirmation-address, .connect, .download-materials {
-    margin-left: 10px;
-}
-
-.confirmation-address p {
-   margin-bottom: 40px;
 }
 
 .connect {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .social {
     padding: 0;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -240,6 +230,11 @@ button:hover {
     margin: -5px 0 25px;
 }
 
+.free-stuff {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 .free-stuff li {
     list-style: none;
 }
