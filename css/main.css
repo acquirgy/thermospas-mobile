@@ -27,9 +27,9 @@ html, button, input, select, textarea {
 h1 {
     color: #01529C;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 30px;
     font-weight: 700;
-    margin: 5px 0;
+    margin: 0 0 5px 0;
 }
 
 h1 strong {
@@ -37,13 +37,14 @@ h1 strong {
 }
 
 p {
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
 p.lead {
     color: #96a0a2;
     font-size: 1.3em;
-    margin: 0 0 1em 0;
+    margin: 0 0 .7em 0;
+    line-height: 1.2em;
 }
 
 h2 {
