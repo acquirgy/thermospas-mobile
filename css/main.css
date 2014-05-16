@@ -274,22 +274,25 @@ button:hover {
 }
 
 @media only screen and (max-width: 320px){
+    .logo {
+        width: 150px;
+    }
     h1 {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 20px;
     }
     h2 {
         font-size: 20px;
         margin: 10px 0 0;
     }
     p.lead {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 16px;
 
     }
     p.form-lead {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 12px;
+        line-height: 14px;
         margin: 5px 0 15px 0;
     }
 }
