@@ -20,7 +20,8 @@ $submission = array(
   'state' => isset($_POST['state']) ? $_POST['state'] : 'not provided',
   'zipcode' => isset($_POST['zip']) ? $_POST['zip'] : 'not provided',
   'email' => isset($_POST['email']) ? $_POST['email'] : 'not provided',
-  'phone' => isset($_POST['phone']) ? $_POST['phone'] : 'not provided'
+  'phone' => isset($_POST['phone']) ? $_POST['phone'] : 'not provided',
+  'iref' => isset($_SESSION['iref']) ? $_SESSION['iref'] : 'IPPC_M'
 );
 
 // Insert record into database
