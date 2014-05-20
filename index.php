@@ -1,7 +1,7 @@
 <?php include('includes/header.php') ?>
 
 <?php
-    $_SESSION['iref'] = isset($_GET['iref']) ? $_GET['iref'] : '';
+    $_SESSION['iref'] = isset($_GET['iref']) ? $_GET['iref'] : 'IPPC_M';
     $_SESSION['ht_id'] = false;
 ?>
 
