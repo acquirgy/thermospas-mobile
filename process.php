@@ -21,7 +21,8 @@ $submission = array(
   'zipcode' => isset($_POST['zip']) ? $_POST['zip'] : 'not provided',
   'email' => isset($_POST['email']) ? $_POST['email'] : 'not provided',
   'phone' => isset($_POST['phone']) ? $_POST['phone'] : 'not provided',
-  'iref' => isset($_SESSION['iref']) ? $_SESSION['iref'] : 'IPPC_M'
+  'iref' => isset($_SESSION['iref']) ? $_SESSION['iref'] : 'IPPC_M',
+  'ht_date' => date("Y-m-d")
 );
 
 // Insert record into database
