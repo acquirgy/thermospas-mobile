@@ -7,6 +7,7 @@
 
 <h1>Get Your <strong>FREE</strong> Hot Tub Brochure & DVD</h1>
 <p class="lead">Request a Hot Tub Quote and <strong>Save $1000</strong></p>
+<div id='mediaplayer'></div><br />
 <form name="form" class="form" method="POST" action="process.php">
     <input type="hidden" name="validate" class="validate" value="invalid" />
     <div class="form-border top"></div>
@@ -49,5 +50,26 @@
     <div class="form-border bottom"></div>
 </form>
 
+<script type="text/javascript">
+
+    jwplayer("mediaplayer").setup({
+
+            flashplayer: "../mediaplayer/player.swf",
+
+            width: 480,
+
+            height: 378,
+
+            file: "http://www.youtube.com/watch?v=c7AmDccjiS4",
+
+            stretching: "fill",
+
+            skin: "../mediaplayer/skins/stormtrooper.zip",
+
+            image: "/img/aquatic_video.jpg"
+
+    });
+
+</script>
 
 <?php include('includes/footer.php') ?>
