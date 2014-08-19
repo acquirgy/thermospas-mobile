@@ -269,8 +269,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 500px){
-    #mediaplayer {width: 95%; height: 190px !important;}
+    #mediaplayer {height: 14em !important;}
 }
+
 
 @media only screen and (max-width: 320px){
     .logo {
@@ -287,7 +288,7 @@ button:hover {
     p.lead {
         font-size: 14px;
         line-height: 16px;
-
+        margin-bottom: -80px;
     }
     p.form-lead {
         font-size: 12px;
@@ -295,5 +296,6 @@ button:hover {
         margin: 5px 0 15px 0;
     }
 
-    #mediaplayer {height: 165px !important;}
+    #mediaplayer {height: 10em !important; margin-bottom: -250px;}
+
 }
