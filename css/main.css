@@ -288,7 +288,7 @@ button:hover {
     p.lead {
         font-size: 14px;
         line-height: 16px;
-        margin-bottom: -80px;
+
     }
     p.form-lead {
         font-size: 12px;
@@ -296,6 +296,6 @@ button:hover {
         margin: 5px 0 15px 0;
     }
 
-    #mediaplayer {height: 10em !important; margin-bottom: -250px;}
+    #mediaplayer {height: 9em !important;}
 
 }
