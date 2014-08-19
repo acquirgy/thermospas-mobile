@@ -269,7 +269,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 500px){
-    #mediaplayer {height: 14em !important;}
+    #mediaplayer {height: 14em !important; margin-bottom: 30px;}
 }
 
 

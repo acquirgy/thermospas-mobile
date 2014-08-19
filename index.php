@@ -57,7 +57,6 @@
             flashplayer: "/mediaplayer/player.swf",
 
             width: "100%",
-            height: "18em",
 
             file: "http://www.youtube.com/watch?v=c7AmDccjiS4",
 
