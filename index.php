@@ -54,7 +54,7 @@
 
     jwplayer("mediaplayer").setup({
 
-            flashplayer: "../mediaplayer/player.swf",
+            flashplayer: "/mediaplayer/player.swf",
 
             width: '100%',
 
@@ -62,7 +62,7 @@
 
             stretching: "fill",
 
-            skin: "../mediaplayer/skins/stormtrooper.zip",
+            skin: "/mediaplayer/skins/stormtrooper.zip",
 
             image: "/img/aquatic_video.jpg"
 
