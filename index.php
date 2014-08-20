@@ -58,6 +58,8 @@
 
             width: "100%",
 
+            aspectratio: "16:9",
+
             file: "http://www.youtube.com/watch?v=c7AmDccjiS4",
 
             stretching: "fill",

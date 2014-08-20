@@ -268,9 +268,6 @@ button:hover {
     line-height: 15px;
 }
 
-@media only screen and (max-width: 500px){
-    #mediaplayer {height: 14em !important; margin-bottom: 30px;}
-}
 
 
 @media only screen and (max-width: 320px){
@@ -296,6 +293,5 @@ button:hover {
         margin: 5px 0 15px 0;
     }
 
-    #mediaplayer {height: 7em !important;}
 
 }
