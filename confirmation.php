@@ -14,7 +14,9 @@ if(isset($_SESSION['ht_id'])) {
 <div class='confirmation'>
 
   <div class='thank-you'>
-    <h1>Thank you <br /><?= $submission['fname'] ?> <?= $submission['lname'] ?>!</h1>
+    <h1>Thank you <br />
+      <?= isset($submission['name']) ? $submission['name'] : $submission['fname'] . ' ' . $submission['lname'] ?>!
+    </h1>
   </div>
 
   <div class='confirmation-address'>

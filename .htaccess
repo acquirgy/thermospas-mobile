@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^quote/?$ quote.php [NC,L]

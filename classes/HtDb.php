@@ -12,6 +12,7 @@ class HtDb
     $db_user = 'thermosp_tscom';
     $db_pass = '*tscom07';
     $this->db = mysqli_connect($db_host,$db_user,$db_pass,$db_name) or die("Error " . mysqli_error($this->db));
+    //$this->db = mysqli_connect('localhost', 'root', null, 'thermosp_thermospascom') or die("Error " . mysqli_error($this->db));
   }
 
   function get($table, $primary_key)
@@ -53,5 +54,21 @@ class HtDb
     return mysqli_insert_id($this->db);
 
   }
+
+  function update($table, $data, $field, $id) {
+
+    $query = "UPDATE $table SET ";
+
+    $i = 0;
+    foreach($data as $key => $value) {
+      $i++;
+      $query .= "$key = '$value'";
+      if($i < count($data)) $query .= ', ';
+    }
+
+    $query .= " WHERE $field = $id";
+    if($this->db->query($query)) return true;
+  }
+
 
 }
