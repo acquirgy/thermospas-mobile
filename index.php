@@ -50,26 +50,8 @@
     <div class="form-border bottom"></div>
 </form>
 
-<script type="text/javascript">
-
-    jwplayer("mediaplayer").setup({
-
-            flashplayer: "/mediaplayer/player.swf",
-
-            width: "100%",
-
-            aspectratio: "16:9",
-
-            file: "http://www.youtube.com/watch?v=c7AmDccjiS4",
-
-            stretching: "fill",
-
-            skin: "/mediaplayer/skins/stormtrooper.zip",
-
-            image: "/img/aquatic_video.jpg"
-
-    });
-
-</script>
+<div class='embed-container'>
+    <iframe src='https://www.youtube.com/embed/c7AmDccjiS4' frameborder='0' allowfullscreen></iframe>
+</div>
 
 <?php include('includes/footer.php') ?>

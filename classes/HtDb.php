@@ -12,7 +12,6 @@ class HtDb
     $db_user = 'thermosp_tscom';
     $db_pass = '*tscom07';
     $this->db = mysqli_connect($db_host,$db_user,$db_pass,$db_name) or die("Error " . mysqli_error($this->db));
-    //$this->db = mysqli_connect('localhost', 'root', null, 'thermosp_thermospascom') or die("Error " . mysqli_error($this->db));
   }
 
   function get($table, $primary_key)
