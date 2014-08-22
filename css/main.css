@@ -269,10 +269,8 @@ button:hover {
 }
 
 .embed-container .loader { width: 85px; display: block; margin: 0 auto; padding-top: 20%;}
-.embed-container { position: relative; min-height: 300px; overflow: hidden; max-width: 100%; height: auto; margin: 35px 0 40px 0;}
-.play-video { height: 300px; width: 100%; margin: 0 auto; display: block; cursor: pointer;
-    background-image: url('/img/aquatic_video_play.jpg'); background-size: 100%; background-repeat: no-repeat;}
-.play-video:hover { background-image: url('/img/aquatic_video_play_hover.jpg'); }
+.embed-container { position: relative; overflow: hidden; max-width: 100%; height: auto; margin: 35px 0 40px 0;}
+.play-video { width: 100%; margin: 0 auto; display: block; cursor: pointer; }
 .embed-container iframe { display: inline; }
 .embed-container iframe,
 .embed-container object,

@@ -2,6 +2,15 @@ $(document).ready( function() {
 
   $('.loader').hide();
 
+  $('.play-video').hover(
+    function() {
+      $(this).attr("src", "/img/aquatic_video_play.jpg");
+    },
+    function() {
+      $(this).attr("src", "/img/aquatic_video_play_hover.jpg");
+    }
+  );
+
   $('.play-video').click( function() {
     $(this).hide();
     $('.loader').show();
