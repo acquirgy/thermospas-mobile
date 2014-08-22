@@ -10,8 +10,8 @@ $(document).ready( function() {
 
   $(".complete-step-1").click( function(e) {
     e.preventDefault();
-
-     $.ajax({
+    if($('.form').valid()) {
+      $.ajax({
         type: 'POST',
         url: 'process_quote.php',
         data: $('.form').serialize(),
@@ -31,9 +31,10 @@ $(document).ready( function() {
             alert('There was an error processing your request. Please try again later.');
           }
         }
-    });
-
-
+      });
+    } else {
+      validator.showErrors();
+    }
 
   })
 

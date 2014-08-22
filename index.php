@@ -9,7 +9,7 @@
 <p class="lead">Request a Hot Tub Quote and <strong>Save $1000</strong></p>
 
 <div class='embed-container'>
-    <iframe src='https://www.youtube.com/embed/c7AmDccjiS4' frameborder='0' allowfullscreen></iframe>
+    <iframe src='https://www.youtube.com/embed/c7AmDccjiS4/' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <form name="form" class="form" method="POST" action="process.php">
