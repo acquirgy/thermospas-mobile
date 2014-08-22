@@ -1,5 +1,17 @@
 $(document).ready( function() {
 
+  $('.loader').hide();
+
+  $('.play-video').click( function() {
+    $(this).hide();
+    $('.loader').show();
+    var src = $(this).data('video');
+    var embedVideo = "<iframe src='" + src + "' frameborder='0' allowfullscreen></iframe>";
+    $('.embed-container').css('padding', '37%');
+    $('.loader').hide();
+    $(this).replaceWith(embedVideo);
+  })
+
   $('.step-2').hide();
 
   $('.form').validate();
