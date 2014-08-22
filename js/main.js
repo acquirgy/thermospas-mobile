@@ -1,6 +1,16 @@
-$(document).ready( function() {
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
 
-  $('.loader').hide();
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+$(document).ready( function() {
 
   $('.play-video').hover(
     function() {
@@ -13,12 +23,15 @@ $(document).ready( function() {
 
   $('.play-video').click( function() {
     $(this).hide();
-    $('.loader').show();
-    var src = $(this).data('video');
-    var embedVideo = "<iframe src='" + src + "' frameborder='0' allowfullscreen></iframe>";
-    $('.embed-container').css('padding', '37%');
-    $('.loader').hide();
-    $(this).replaceWith(embedVideo);
+    player = new YT.Player('player', {
+      height: $('.wrapper').width() * .7,
+      width: $('.wrapper').width(),
+      videoId: 'c7AmDccjiS4',
+      playerVars: { "showinfo": 0 },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
   })
 
   $('.step-2').hide();

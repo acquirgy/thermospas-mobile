@@ -8,10 +8,9 @@
 <h1>Get Your <strong>FREE</strong> Hot Tub Brochure & DVD</h1>
 <p class="lead">Request a Hot Tub Quote and <strong>Save $1000</strong></p>
 
-<div class='embed-container'>
-    <img src="/img/loader1.GIF" class="loader" />
-    <img src="/img/aquatic_video_play.jpg" class="play-video"
-        data-video="https://www.youtube.com/embed/c7AmDccjiS4?autoplay=1" />
+<div class="player-container">
+    <img src="/img/aquatic_video_play.jpg" class="play-video" />
+    <div id="player"></div>
 </div>
 
 <form name="form" class="form" method="POST" action="process.php">
