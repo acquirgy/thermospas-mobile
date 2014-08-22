@@ -269,7 +269,7 @@ button:hover {
 }
 
 .embed-container iframe { display: inline; }
-.embed-container { position: relative; padding: 35%; height: 0; overflow: hidden; max-width: 100%; height: auto; margin-top: 40px;}
+.embed-container { position: relative; padding: 35%; height: 0; overflow: hidden; max-width: 100%; height: auto; margin: 35px 0 40px 0;}
 .embed-container iframe,
 .embed-container object,
 .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

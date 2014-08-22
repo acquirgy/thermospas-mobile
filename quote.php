@@ -4,7 +4,10 @@
 
 <h1>Find the best hot tub that fits your needs, then get a quote!</h1>
 <p class="lead">Request a Hot Tub Quote and <strong>Save $1000</strong></p>
-<div id='mediaplayer'></div><br />
+
+<div class='embed-container'>
+    <iframe src='http://www.youtube.com/embed/c7AmDccjiS4' frameborder='0' allowfullscreen></iframe>
+</div>
 
 <form name="form" class="form" method="POST" action="process_quote.php">
     <input type="hidden" name="validate" class="validate" value="invalid" />
@@ -116,11 +119,6 @@
     <div class="form-border bottom"></div>
 
 </form>
-
-<div class='embed-container'>
-    <iframe src='http://www.youtube.com/embed/c7AmDccjiS4' frameborder='0' allowfullscreen></iframe>
-</div>
-
 
 <?php include('includes/footer.php') ?>
 
