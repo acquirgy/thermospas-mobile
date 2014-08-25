@@ -14,10 +14,10 @@ $(document).ready( function() {
 
   $('.play-video').hover(
     function() {
-      $(this).attr("src", "/img/aquatic_video_play.jpg");
+      $(this).attr("src", "/img/aquatic_video_play_hover.jpg");
     },
     function() {
-      $(this).attr("src", "/img/aquatic_video_play_hover.jpg");
+      $(this).attr("src", "/img/aquatic_video_play.jpg");
     }
   );
 
