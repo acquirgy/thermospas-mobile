@@ -1,38 +1,5 @@
-// 2. This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
 
 $(document).ready( function() {
-
-  $('.play-video').hover(
-    function() {
-      $(this).attr("src", "/img/aquatic_video_play_hover.jpg");
-    },
-    function() {
-      $(this).attr("src", "/img/aquatic_video_play.jpg");
-    }
-  );
-
-  $('.play-video').click( function() {
-    $(this).hide();
-    player = new YT.Player('player', {
-      height: $('.wrapper').width() * .7,
-      width: $('.wrapper').width(),
-      videoId: 'c7AmDccjiS4',
-      playerVars: { "showinfo": 0 },
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  })
 
   $('.step-2').hide();
 

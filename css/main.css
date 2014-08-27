@@ -269,16 +269,25 @@ button:hover {
 }
 
 .player-container {
-    padding: 0 0 30px 0;
+    position: relative;
+    padding-bottom: 55%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10%;
 }
-.play-video {
+
+.player-container iframe,
+.player-container object,
+.player-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
-    cursor: pointer;
+    height: 100%;
 }
-iframe#player {
-    display: block;
-}
+
+#video { display: block;}
 
 @media only screen and (max-width: 320px){
     .logo {

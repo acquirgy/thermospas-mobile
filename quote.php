@@ -39,7 +39,7 @@
 
         <div class="row"><input type="text" id="zipcode" name="zipcode" class="required" placeholder="*Your Zip Code"/></div>
 
-        <div class="row"><input type="text" id="phone" name="phone" class="required" placeholder="*Phone" /></div>
+        <div class="row"><input type="text" name="phone" class="phone required" placeholder="Phone*" /></div>
 
         <div class="row">
             <button class="complete-step-1">Next Step</button>
@@ -65,7 +65,6 @@
         <div class="row">
             <select name="ht_jets" id="ht_jets" class="customDropDown required" >
                 <option selected="selected" value="">What type of jets?</option>
-                <option value="">What type of jets would you like?</option>
                 <option value="unsure">Not Sure</option>
                 <option value="massage">Massaging / Swirling</option>
                 <option value="neck">Neck Jets</option>
