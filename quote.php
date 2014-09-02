@@ -15,7 +15,7 @@
         <p class="form-lead">...and we'll provide you a quote on the hot tub of your dreams.</p>
 
         <div class="row">
-            <select name="ht_use" class="customDropDown required" id="ht_use">
+            <select name="ht_use" class="customDropDown" id="ht_use">
                 <option value="">Primary Hot Tub Use?</option>
                 <option value="relaxation">Relaxation</option>
                 <option value="hydrotherapy">Hydrotherapy/Pain Relief</option>
@@ -25,7 +25,7 @@
         </div>
 
        <div class="row">
-           <select name="ht_seating" class="customDropDown required" id="ht_seating">
+           <select name="ht_seating" class="customDropDown" id="ht_seating">
                 <option value="">How many people?</option>
                 <option value="2to3">2-3 person</option>
                 <option value="3to4">3-4 person</option>
@@ -53,7 +53,7 @@
         $1,000 coupon, DVD, and complete information package.</p>
 
         <div class="row">
-            <select name="ht_location" class="customDropDown required" id="ht_location">
+            <select name="ht_location" class="customDropDown" id="ht_location">
                 <option value="">Do you have a location?</option>
                 <option value="outside">Yes: Outside</option>
                 <option value="inside">Yes: Inside</option>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="row">
-            <select name="ht_jets" id="ht_jets" class="customDropDown required" >
+            <select name="ht_jets" id="ht_jets" class="customDropDown" >
                 <option selected="selected" value="">What type of jets?</option>
                 <option value="unsure">Not Sure</option>
                 <option value="massage">Massaging / Swirling</option>
@@ -75,7 +75,7 @@
         </div>
 
         <div class="row">
-            <select name="ht_owner" id="ht_owner" class="customDropDown required" >
+            <select name="ht_owner" id="ht_owner" class="customDropDown" >
                 <option value="">Have you owned a hot tub before?</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="row">
-            <select name="ht_siteinspection" id="ht_siteinspection" class="customDropDown required" />
+            <select name="ht_siteinspection" id="ht_siteinspection" class="customDropDown" />
                 <option value="">Have you had a site inspection?</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
