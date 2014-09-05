@@ -35,9 +35,9 @@
             </select>
         </div>
 
-        <div class="row"><input type="text" id="name" name="name" class="required" placeholder="*Your Name"/></div>
+        <div class="row"><input type="text" id="name" name="name" class="required" placeholder="Your Name*"/></div>
 
-        <div class="row"><input type="text" id="zipcode" name="zipcode" class="required" placeholder="*Your Zip Code"/></div>
+        <div class="row"><input type="text" id="zipcode" name="zipcode" class="required" placeholder="Your Zip Code*"/></div>
 
         <div class="row"><input type="text" name="phone" class="phone required" placeholder="Phone*" /></div>
 
@@ -91,9 +91,9 @@
             </select>
         </div>
 
-        <div class="row"><input type="text" id="address" name="address" class="required" placeholder="*Your Address" /></div>
+        <div class="row"><input type="text" id="address" name="address" class="required" placeholder="Your Address*" /></div>
 
-        <div class="row"><input type="text" id="city" name="city" class="required" placeholder="*Your city" /></div>
+        <div class="row"><input type="text" id="city" name="city" class="required" placeholder="Your City*" /></div>
 
         <div class="row">
             <select name="state" id="state" class="customDropDown required" >
