@@ -106,7 +106,7 @@
         <div class="row"><input type="text" id="email" name="email" placeholder=" Your Email"/></div>
 
         <div class="row" >
-            <button type="submit" name="submit" id="submit" onclick="validate();">Get a Quote and DVD Now</button>
+            <button type="submit" name="submit" id="submit" >Get a Quote and DVD Now</button>
         </div>
     </div>
 
