@@ -1,4 +1,5 @@
 <?php include('includes/header.php') ?>
+<script src="js/quote.js"></script>
 
 <?php if(isset($_SESSION['ht_id'])) unset($_SESSION['ht_id']) ?>
 
@@ -16,7 +17,7 @@
 
         <div class="row">
             <select name="ht_use" class="customDropDown" id="ht_use">
-                <option value="">Primary Hot Tub Use?</option>
+                <option value="" selected disabled style="display: none;">Primary Hot Tub Use?</option>
                 <option value="relaxation">Relaxation</option>
                 <option value="hydrotherapy">Hydrotherapy/Pain Relief</option>
                 <option value="exercise">Exercise</option>
@@ -26,7 +27,7 @@
 
        <div class="row">
            <select name="ht_seating" class="customDropDown" id="ht_seating">
-                <option value="">How many people?</option>
+                <option value="" selected disabled style="display: none;">How many people?</option>
                 <option value="2to3">2-3 person</option>
                 <option value="3to4">3-4 person</option>
                 <option value="4to5">4-5 person</option>
@@ -54,7 +55,7 @@
 
         <div class="row">
             <select name="ht_location" class="customDropDown" id="ht_location">
-                <option value="">Do you have a location?</option>
+                <option value="" selected disabled style="display: none;">Do you have a location?</option>
                 <option value="outside">Yes: Outside</option>
                 <option value="inside">Yes: Inside</option>
                 <option value="no">Unsure</option>
@@ -64,7 +65,7 @@
 
         <div class="row">
             <select name="ht_jets" id="ht_jets" class="customDropDown" >
-                <option selected="selected" value="">What type of jets?</option>
+                <option value="" selected disabled style="display: none;">What type of jets?</option>
                 <option value="unsure">Not Sure</option>
                 <option value="massage">Massaging / Swirling</option>
                 <option value="neck">Neck Jets</option>
@@ -76,7 +77,7 @@
 
         <div class="row">
             <select name="ht_owner" id="ht_owner" class="customDropDown" >
-                <option value="">Have you owned a hot tub before?</option>
+                <option value="" selected disabled style="display: none;">Have you owned a hot tub before?</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
@@ -85,7 +86,7 @@
 
         <div class="row">
             <select name="ht_siteinspection" id="ht_siteinspection" class="customDropDown" />
-                <option value="">Have you had a site inspection?</option>
+                <option value="" selected disabled style="display: none;">Have you had a site inspection?</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
@@ -97,6 +98,7 @@
 
         <div class="row">
             <select name="state" id="state" class="customDropDown required" >
+                <option value="" selected disabled style="display: none;">Your State*</option>
                 <?php foreach(states() as $abbrev => $state) { ?>
                     <option value="<?= $abbrev ?>"><?= $state ?></option>
                 <?php } ?>
@@ -114,6 +116,18 @@
     <div class="form-border bottom"></div>
 
 </form>
+
+
+<script type="text/javascript">
+    function validateForm() {
+        return $('.form').valid();
+    }
+    var __ss_noform = __ss_noform || [];
+    __ss_noform.push(['baseURI', 'https://app-PLBR48.sharpspring.com/webforms/receivePostback/MzQyNQAA/']);
+    __ss_noform.push(['endpoint', 'e1da5d6d-3468-46ba-8dbb-451f975af1b3']);
+    __ss_noform.push(['validate', validateForm]);
+</script>
+<script type="text/javascript" src="https://koi-PLBR48.sharpspring.com/client/noform.js?ver=1.0" ></script>
 
 <?php include('includes/footer.php') ?>
 

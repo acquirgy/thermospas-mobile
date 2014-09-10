@@ -1,7 +1,4 @@
-
 $(document).ready( function() {
-
-  $('.step-2').hide();
 
   $('.form').validate();
 
@@ -9,33 +6,10 @@ $(document).ready( function() {
 
   $(".phone").mask("(999) 999-9999");
 
-  $(".complete-step-1").click( function(e) {
-    e.preventDefault();
-    if($('.form').valid()) {
-      $.ajax({
-        type: 'POST',
-        url: 'process_quote.php',
-        data: $('.form').serialize(),
-        dataType: 'json',
-        success: function(result) {
-          if(result == 'success') {
-            $('.step-1').toggle('slide');
-            $('.step-2').show();
-          } else {
-            alert('There was an error processing your request. Please try again later.');
-          }
-        },
-        error: function(jqXHR,error, errorThrown) {
-          if(jqXHR.status&&jqXHR.status == 400) {
-            alert(jqXHR.responseText);
-          } else {
-            alert('There was an error processing your request. Please try again later.');
-          }
-        }
-      });
-    }
-
-  })
+  $("select").change(function () {
+      if($(this).val() == null) $(this).addClass("empty");
+      else $(this).removeClass("empty")
+  });
+  $("select").change();
 
 });
-

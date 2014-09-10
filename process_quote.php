@@ -27,7 +27,7 @@ $submission = array(
   'email' => isset($_POST['email']) ? $_POST['email'] : 'not provided',
   'phone' => isset($_POST['phone']) ? $_POST['phone'] : 'not provided',
   'iref' => isset($_SESSION['iref']) ? $_SESSION['iref'] : 'IPPC_M',
-  'ht_date' => date("Y-m-d")
+  'ht_date' => @date("Y-m-d")
 );
 
 // Insert record into database if ajax (first portion of form submit)

@@ -18,6 +18,27 @@ html, button, input, select, textarea {
     border: none;
 }
 
+
+::-webkit-input-placeholder {
+   color: #96a0a2;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #96a0a2;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #96a0a2;
+}
+
+:-ms-input-placeholder {
+   color: #96a0a2;
+}
+
+select.empty {
+    color: #96a0a2;
+}
+
 ::-moz-selection {
     background: #01529C;
     text-shadow: none;
@@ -287,9 +308,15 @@ button:hover {
     height: 100%;
 }
 
-#video { display: block;}
+#video {
+    display: block;
+}
 
-@media only screen and (max-width: 320px){
+.step-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
     .logo {
         width: 150px;
     }
