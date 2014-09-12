@@ -12,11 +12,11 @@ $(document).ready( function() {
             $('.step-1').hide(200);
             $('.step-2').show(200);
           } else {
-            alert('There was an error processing your request. Please try again later.');
+            alert('There was an error processing your request. Please try again later. #1');
           }
         },
         error: function(jqXHR,error, errorThrown) {
-          alert('There was an error processing your request. Please try again later.');
+          alert('There was an error processing your request. Please try again later. #2');
         }
       });
     }
