@@ -17,7 +17,7 @@ $(document).ready( function() {
         },
         error: function(jqXHR,error, errorThrown) {
           alert('There was an error processing your request. Please try again later (#2) ' +
-            'jqXHR: ' + jqXHR + ', error: ' + error + ', errorThrown: ' + errorTrhown)
+            'jqXHR: ' + jqXHR + ', error: ' + error + ', errorThrown: ' + errorTrhown
           );
         }
       });
